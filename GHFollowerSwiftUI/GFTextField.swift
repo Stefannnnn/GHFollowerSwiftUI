@@ -23,7 +23,7 @@ struct GFTextField: View {
     }
 }
 
-#Preview {
-    @FocusState private var isEditing: Bool
-    GFTextField(isEditing: isEditing)
-}
+//#Preview {
+//    @FocusState var isEditing: Bool
+//    GFTextField(isEditing: $isEditing)
+//}
