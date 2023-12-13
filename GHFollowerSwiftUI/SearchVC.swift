@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct SearchVC: View {
-    
+
     let imageName = "gh-logo"
     let buttonTitle = "Get Followers"
+    @FocusState private var isEditing: Bool
 
     var body: some View {
         VStack {
@@ -19,16 +20,19 @@ struct SearchVC: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 200, height: 200)
                 .padding(.top, 100)
-                
-            GFTextField()
+
+            GFTextField(isEditing: $isEditing)
                 .padding(.top, 40)
-            
+
             Spacer()
 
             GFButton(title: buttonTitle, buttonColor: .green)
                 .padding(.bottom, 30)
         }
         .background(Color(UIColor.systemBackground))
+        .onTapGesture {
+            isEditing = false
+        }
     }
 }
 
