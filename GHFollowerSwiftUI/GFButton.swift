@@ -19,7 +19,7 @@ struct GFButton: View {
 
     var body: some View {
         Button(title) {
-            
+
         }
         .foregroundColor(.white)
         .font(.custom("Georgia", size: 16, relativeTo: .headline))

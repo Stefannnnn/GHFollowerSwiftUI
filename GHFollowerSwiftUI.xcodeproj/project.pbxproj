@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		674737ED2B29759C00282C9B /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674737EC2B29759C00282C9B /* FollowerListVC.swift */; };
 		67EF2F1A2B24DCB700C17F56 /* GHFollowerSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EF2F192B24DCB700C17F56 /* GHFollowerSwiftUIApp.swift */; };
 		67EF2F1C2B24DCB700C17F56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EF2F1B2B24DCB700C17F56 /* ContentView.swift */; };
 		67EF2F1E2B24DCB900C17F56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67EF2F1D2B24DCB900C17F56 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		674737EC2B29759C00282C9B /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		67EF2F162B24DCB700C17F56 /* GHFollowerSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowerSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EF2F192B24DCB700C17F56 /* GHFollowerSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHFollowerSwiftUIApp.swift; sourceTree = "<group>"; };
 		67EF2F1B2B24DCB700C17F56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		67EF2F182B24DCB700C17F56 /* GHFollowerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				674737EC2B29759C00282C9B /* FollowerListVC.swift */,
 				67EF2F192B24DCB700C17F56 /* GHFollowerSwiftUIApp.swift */,
 				67EF2F1B2B24DCB700C17F56 /* ContentView.swift */,
 				67EF2F2B2B255C1E00C17F56 /* GFButton.swift */,
@@ -153,6 +156,7 @@
 				67EF2F1C2B24DCB700C17F56 /* ContentView.swift in Sources */,
 				67EF2F2C2B255C1E00C17F56 /* GFButton.swift in Sources */,
 				67EF2F1A2B24DCB700C17F56 /* GHFollowerSwiftUIApp.swift in Sources */,
+				674737ED2B29759C00282C9B /* FollowerListVC.swift in Sources */,
 				67EF2F2A2B24F1DB00C17F56 /* FavoritesListVC.swift in Sources */,
 				67EF2F282B24F17A00C17F56 /* SearchVC.swift in Sources */,
 			);

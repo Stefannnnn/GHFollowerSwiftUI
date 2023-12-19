@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct GFTextField: View {
-    @State private var name: String = ""
+    @Binding var name: String
     var isEditing: FocusState<Bool>.Binding
-    
+
     var body: some View {
         TextField("Enter Username", text: $name)
             .focused(isEditing)

@@ -12,26 +12,36 @@ struct SearchVC: View {
     let imageName = "gh-logo"
     let buttonTitle = "Get Followers"
     @FocusState private var isEditing: Bool
+    @State private var userNameInput: String = ""
 
     var body: some View {
-        VStack {
-            Image(imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 200, height: 200)
-                .padding(.top, 100)
+        NavigationView {
+            VStack {
+                Image(imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+                    .padding(.top, 100)
 
-            GFTextField(isEditing: $isEditing)
-                .padding(.top, 40)
+                GFTextField(name: $userNameInput, isEditing: $isEditing)
+                    .padding(.top, 40)
 
-            Spacer()
+                Spacer()
 
-            GFButton(title: buttonTitle, buttonColor: .green)
-                .padding(.bottom, 30)
-        }
-        .background(Color(UIColor.systemBackground))
-        .onTapGesture {
-            isEditing = false
+                NavigationLink(destination: FollowerListVC(userName: $userNameInput), label: {
+                    Text(buttonTitle)
+                        .foregroundColor(.white)
+                        .font(.custom("Georgia", size: 16, relativeTo: .headline))
+                        .frame(width: 280, height: 50)
+                        .background(.green)
+                        .cornerRadius(10)
+                })
+                    .padding(.bottom, 30)
+            }
+            .background(Color(UIColor.systemBackground))
+            .onTapGesture {
+                isEditing = false
+            }
         }
     }
 }
@@ -39,3 +49,5 @@ struct SearchVC: View {
 #Preview {
     SearchVC()
 }
+
+ 
